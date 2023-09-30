@@ -1,0 +1,25 @@
+{
+    "name": "eswap/eswap",
+    "description": "a civil service swapping application",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Eswap\\Eswap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "emmanuel muswalo",
+            "email": "emuswalo7@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php101/php101": "^1.0",
+        "vlucas/phpdotenv": "^5.5",
+        "firebase/php-jwt": "^6.8",
+        "fakerphp/faker": "^1.23",
+        "geoip2/geoip2": "^2.13",
+        "google/apiclient": "^2.15"
+    }
+}

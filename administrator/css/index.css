@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  display: flex;
+}
+.side-nav-container {
+  height: 100vh;
+  background-color: royalblue;
+  width: 16em;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  position: fixed;
+}
+.side-nav-container.open {
+  transform: translateX(0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.page-content.pageopen {
+  margin-left: 16em;
+}
+
+.page-content {
+  transition: margin-left 0.5s ease;
+  margin-left: 16em;
+}
+.side-nav-list {
+  list-style-type: none;
+  padding: 40px;
+}
+
+.side-nav-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-nav-list li i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.side-nav-list li:hover {
+  background-color: lightblue;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: -10px;
+}
+.user-info-image {
+  height: 4em;
+  width: 4em;
+  position: relative;
+  left: 10px;
+}
+
+.user-info-image img {
+  height: 100%;
+  border-radius: 8px;
+}
+.user-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.det {
+  color: white;
+  font-weight: 700;
+}
+
+.hamberger {
+  display: none;
+}
+
+.data-cont {
+  position: relative;
+  left: 70px;
+  width: 900px;
+  overflow: scroll;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.red-button:focus {
+  outline: none;
+  background-color: royalblue;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: -460px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hamberger {
+    display: block;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    padding: 4px 9px;
+    border-radius: 9px;
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    width: fit-content;
+  }
+  .side-nav-container {
+    transform: translateX(-16em);
+  }
+  .page-content {
+    margin-left: 0;
+  }
+}
