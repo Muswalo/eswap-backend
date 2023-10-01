@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . './config.php';
+require_once __DIR__ . '/config.php';
 use Dotenv\Dotenv;
 use Php101\Php101\DBInterface;
 use Php101\Php101\ErrorLogger;
