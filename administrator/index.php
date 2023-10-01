@@ -1,6 +1,6 @@
 <?php
 
-require_once "../src/config/Dbh.config.php";
+require_once "../src/config/config.php";
 use Php101\Php101\MessageInterface;
 
 session_start();
