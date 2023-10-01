@@ -19,7 +19,7 @@ try {
 
 } catch (\Exception $e) {
 
-    new ErrorLogger($e->getMessage(), time(), $conn);
+    // new ErrorLogger($e->getMessage(), time(), $conn);
     header('Content-Type: application/json');
     http_response_code(500);
     echo json_encode(array('status'=>'failed','error' => 'An error occurred.'));
