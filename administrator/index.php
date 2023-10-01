@@ -1,5 +1,10 @@
 <?php
+<<<<<<< HEAD
 require_once "../src/config/config.php";
+=======
+
+require_once "../src/config/Dbh.config.php";
+>>>>>>> parent of 1b5732a (changed config file from DBH.config to config.php)
 use Php101\Php101\MessageInterface;
 
 session_start();
